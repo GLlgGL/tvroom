@@ -1,0 +1,14 @@
+{
+  "name": "tvroom-proxy",
+  "version": "1.0.0",
+  "description": "Vercel HLS proxy + resolver for tvroom.me (player.bcbc.red). Rewrites the playlist so the AES key and segments route back through the proxy, strips the fake-PNG wrapper from segments, and (optionally) mints the stream token from Vercel's own IP so the IP-bound JWT matches.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  }
+}
